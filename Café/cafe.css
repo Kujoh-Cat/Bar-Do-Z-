@@ -1,0 +1,222 @@
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+    user-select: none;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fade-in {
+    animation: fadeIn 3.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#top-global {
+    background: linear-gradient(45deg, #8B4513 25%, #D2B48C 25%, #D2B48C 50%, #8B4513 50%, #8B4513 75%, #D2B48C 75%);
+     color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#leaderboard {
+    list-style-type: none;
+    padding: 0;
+}
+
+#coffee-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#coffee-stats {
+    margin: 10px 0;
+}
+
+#coffeeCounter {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(169, 169, 169, 0.3); /* Cinza transparente */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+#coffeeCount {
+    color: #333;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#coffeeButton {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.2); /* Adicionada sombra para efeito 3D */
+    transition: background-color 0.3s ease; /* Adicionada transição para suavizar a mudança de cor */
+}
+
+#coffeeButton:hover {
+    background: linear-gradient(45deg, #FFA500, #FFD700);
+    background-color: #FFA500; /* Cor adicionada no hover */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Efeito de brilho durante o hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 6px 16px rgba(0, 0, 0, 0.3); /* Ajuste a sombra durante o hover para um efeito mais pronunciado */
+}
+
+#coffeeButton:active {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    background-color: rgba(255, 165, 0, 0.8); /* Cor adicionada no clique (mais escura) */
+    transition: background-color 0.3s ease; /* Adicionada transição para suavizar a mudança de cor durante o clique */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adicionada sombra durante o clique */
+}
+
+
+#leaderboard li {
+    font-family: 'Pacifico', cursive;
+    background: #fff; /* Fundo branco */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px; /* Borda mais arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adicionada sombra para efeito 3D */
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#leaderboard .user-info {
+    display: flex;
+    align-items: center;
+}
+
+#leaderboard .user-info img {
+    margin-right: 10px;
+}
+
+#leaderboard .user-info span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#leaderboard .user-info .flag {
+    font-size: 20px;
+}
+
+#leaderboard .coffee-count {
+    font-size: 20px;
+}
+
+#rebirthButton {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg,
+        #800080 0%, #9400D3 20%, /* Tons de roxo */
+        #0040FF 40%, #0080FF 60%, /* Tons de azul */
+        #FF0000 80%, #FF2400 100%); /* Tons de vermelho */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#rebirthButton {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg,
+        #4169E1 0%, #8A2BE2 100%); /* Tons de azul e roxo */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease; /* Transição mais suave */
+}
+
+#rebirthButton:hover {
+    background: linear-gradient(90deg,
+        #8A2BE2 0%, #4169E1 100%); /* Tons de azul e roxo invertidos */
+    background-color: #8A2BE2; /* Tom inicial no hover */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8); /* Sombra mais forte no texto */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 6px 16px rgba(0, 0, 0, 0.4); /* Sombra mais forte no botão */
+}
+
+#rebirthButton:active {
+    background: linear-gradient(90deg,
+        #4169E1 0%, #8A2BE2 100%); /* Tons de azul e roxo */
+    background-color: #4169E1; /* Tom inicial no clique */
+    transition: background-color 0.5s ease; /* Transição mais suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#coffeeCount {
+    opacity: 0;
+    animation: fadeIn 3.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 3;
+    }
+}
+
+#nameLabel {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+#nameInput {
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#saveButton {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#saveButton:hover {
+    background: linear-gradient(45deg, #45a049, #4CAF50);
+}
+
+#nameLabel, #nameInput, #saveButton {
+    display: block; /* Mantenha visível por padrão */
+}
+
+/* Adiciona estilos para ocultar os elementos quando o nome já foi escolhido */
+body[data-name-chosen="true"] #nameLabel,
+body[data-name-chosen="true"] #nameInput,
+body[data-name-chosen="true"] #saveButton {
+    display: none;
+}
